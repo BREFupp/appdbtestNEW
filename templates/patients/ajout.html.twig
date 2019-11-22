@@ -1,0 +1,15 @@
+{% extends "base.html.twig" %}
+
+<title>{% block title %}Formulaire ajout article{% endblock %}</title>
+
+<body>
+    {% block body %}
+      <form action="(path{{''}})" method="post">
+          <input type="text" name="title">
+          <input type="text" name="author">
+          <input type="text" name="content">
+          Date: <input type="text" id="datepicker"></p>
+          <button class="btn">Publier</button>
+      </form>
+    {% endblock %}
+</body>
