@@ -111,7 +111,8 @@ class PatientsArticle
 
     public function getCreatedAt(): ?\DateTimeInterface
     {
-        return $this->createdAt;
+        return $this->createdAt = new \DateTime("now");
+
     }
 
     public function setCreatedAt(\DateTimeInterface $createdAt): self
