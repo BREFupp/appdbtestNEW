@@ -52,11 +52,11 @@ class PatientsArticle
     private $createdAt;
 
     /**
-     * @var \DateTime|null
+     * @var \DateTime
      *
      * @ORM\Column(name="updated_at", type="datetime", nullable=true, options={"default"="NULL"})
      */
-    private $updatedAt = 'NULL';
+    private $updatedAt;
 
     /**
      * @ORM\OneToMany(targetEntity="App\Entity\PatientsGrid", mappedBy="patientsArticle")
@@ -117,7 +117,7 @@ class PatientsArticle
 
     public function setCreatedAt(\DateTimeInterface $createdAt): self
     {
-        $this->createdAt = new \DateTime("now");
+        $this->createdAt = $createdAt;
 
         return $this;
     }

@@ -32,6 +32,9 @@ class PatientsController extends AbstractController
         $articlepatient->setTitle('');
         $articlepatient->setAuthor('');
         $articlepatient->setContent('');	
+        $articlepatient->setCreatedAt('');	
+
+
 
         // tell Doctrine you want to (eventually) save the Product (no queries yet)
         $entityManager->persist($articlepatient);
