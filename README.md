@@ -1,7 +1,7 @@
 # appdbtestNEW
  26.11.19
 
-Hello cher collègue dev! 
+Hello cher(e) collègue dev! 
 Je suis ta prédecesseure Cellia =) 
 
 J'écris ces quelques lignes ici pour expliquer un peu mon raisonnement par rapport aux fichiers qui se trouvent dans ce dossier.
